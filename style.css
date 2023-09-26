@@ -3,21 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-size: initial;
-    font-weight: 400px;
+    font-weight: 600px;
     text-align: initial;
+    background-color: azure;
 }
 
 
 .container {
-    height: 500px;
+    height: 800px;
     background-color: antiquewhite;
-    border: 5px solid #a1076e;
+    border: 10px solid #74044f;
     display: flex;
 }
 
 .contido {
 
-    width: 500px;
+    width: 800px;
     height: 200px;
     background-color: rgb(113, 209, 247);
     border: 1px solid #000;
@@ -30,6 +31,9 @@
     border: 5px solid #a1076e;
     display: flex;
 }
+
+
+
 
 .flex-direction {
     width: 500px;
