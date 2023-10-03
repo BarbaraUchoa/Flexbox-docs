@@ -1,152 +1,127 @@
- <!DOCTYPE html>
- <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
 
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1.0">
-      <title>Flexbox</title>
-      <link rel="stylesheet" href="./style.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 
 <body>
 
     <header>
-      <section class="menu">
+        <section class="menu">
+            
+        </section>
         <h1>Flexbox</h1>
         <h2>Documentação</h2>
-        <h3> Display:Flex:A primeira propriedade que precisa ser declarada para que Flexbox funcione! 
-          
-          Algumas propriedades como Flex-direction, justify-content e align-content já vem com os valores padrão 
-        </h3>
+        <p> Display:Flex:A primeira propriedade que precisa ser declarada para que Flexbox funcione!</p>
+
+        <p> Algumas propriedades como Flex-direction, justify-content e align-content já vem com os valores padrão</p>
         
-      </section>
-
     </header>
-    
 
-      
 
-       <!-- 
+
+
+    <!-- 
         table>(tr>th.propriedade+th.valor)+tr*3>td.propriedade+td.valor
     
      -->
-    <table class="table-stilo">
+    <table class="table-estilo">
         <tr>
-    
-         <th class="propriedade">Flexbox-Direction</th>
-         <td class="valor">Valor</td>
-       </tr>
 
-       <tr>
-         <th class="propriedade">Flex-direction</th>
-         <td class="valor">row</td>
+            <th class="propriedade">Propriedade</th>
+            <th class="valor">Valor</th>
+        </tr>
+
+        <tr>
+            <td class="propriedade">Flex-direction</td>
+            <td class="valor">Row</td>
         </tr>
 
 
         <tr>
-            <th class="propriedade">Align-content</th>
+            <td class="propriedade">Align-content</td>
             <td class="valor">Flex-Start</td>
-         </tr>
+        </tr>
 
-         <tr>
-            <th class="propriedade">justify-content</th>
+        <tr>
+            <td class="propriedade">Justify-content</td>
             <td class="valor"> Flex-Start</td>
-            
-         </tr>
+
+        </tr>
 
     </table>
 
-        <p>Exemplo:</p>
+    <p>Exemplo:</p>
+    <!-- Aqui começa a minha caixa Flex -->
+    <div class="container container-flex-direction">
+        <div class="contido-flexdirection">
+            <div class="item">Row</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
 
-          <div class="container-flex-direction">
+        <div class="contido-flexdirection rowreverse">
+            <div class="item">Row-Reverse</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
 
-            <div class="contido"> 
-              <section class="row">row</section>
-              <div class="row">1</div>
-              <div class="row">2</div>
-              <div class="row">3</div>
-              <div class="row">4</div>  
-            </div>
+        <div class="contido-flexdirection column">
+            <div class="item">Column</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
 
-    
-              <div class="rowreverse">
-                <section class="rowreverse">row-reverse</section>
-                <div class="rowreverse">1</div>
-                <div class="rowreverse">2</div>
-                <div class="rowreverse">3</div>
-                <div class="rowreverse">4</div>
-             </div>
+        <div class="contido-flexdirection columnreverse">
+            <div class="item">Column-Reverse</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
 
-              <div class="column">
-                <section class="column">Column</section>
-                <div class="column">1</div>
-                <div class="column">2</div>
-                <div class="column">3</div>
-                <div class="column">4</div>
-             </div>
+    </div>
 
-            <div class="columreverse">
-                <section class="columnreverse">Column-Reverse</section>
-                <div class="columnreverse">1</div>
-                <div class="columnreverse">2</div>
-                <div class="columnreverse">3</div>
-                <div class="columnreverse">4</div>
-            </div>     
-         
-          </div>
+   
 
-   <section>
+    <section>
         <h1>Justify-Content</h1>
         <h2>Documentação</h2>
         <h3> Display: Justify-Content</h3>
         <p class="descricao-propriedade">
             A primeira propriedade que precisa ser declarada para que Flexbox funcione!
         </p>
-        <p class="dicricao-propriedade"> Algumas propriedades como Flex-direction, justify-content e align-content já vem com os valores padrão </p>
-   </section>    
+        <p class="dicricao-propriedade"> Algumas propriedades como Flex-direction, justify-content e align-content já
+            vem com os valores padrão </p>
+    </section>
 
-       <div class="container">
-          <div class="contido">Exemplo 2</div>
-          <div class="contido">Exemplo 2</div>
-          <div class="contido">Exemplo 3</div>
-          <div class="contido">Exemplo 4</div>
-       </div>    
-
-     <section>
-          <h1>Justify-Content</h1>
-          <h2>Documentação</h2>
-          <h3> Display: Flex</h3>
-          <p class="descricao-propriedade">
-            A primeira propriedade que precisa ser declarada para que Flexbox funcione!
-          </p>
-          <p class="dicricao-propriedade"> Algumas propriedades como Flex-direction, justify-content e align-content já vem com os valores padrão </p>
-     </section>    
-        
-        <div class="container">
-        <div class="contido">Column</div>
-        <div class="contido">Column-Reverse</div>
-        <div class="contido">center</div>
-        <div class="contido">Exemplo 4</div>
+    <div class="container-justifycontent">
+        <div class="contidocontido-justifycontent">
+            <div class="item"></div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
         </div>
+    </div>
 
-      <section>
-          <h1>Flexbox-Direction</h1>
-          <h2>Documentação</h2>
-          <h3> Display: Flex</h3>
-          <p class="descricao-propriedade">
-            A primeira propriedade que precisa ser declarada para que Flexbox funcione!
-          </p>
-          <p class="dicricao-propriedade"> Algumas propriedades como Flex-direction, justify-content e align-content já vem com os valores padrão </p>
-      </section> 
-
-        <div class="container">
-        <div class="contido">Propriedade</div>
-        <div class="contido">Exemplo 2</div>
-        <div class="contido">Exemplo 3</div>
-        <div class="contido">Exemplo 4</div>
-        </div> 
     
-    
-</body>    
 
+
+    
+
+
+</body>
+</html>
