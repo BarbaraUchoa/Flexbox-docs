@@ -119,5 +119,6 @@ h2 {
     height: 200px;
     background-color: rgb(113, 209, 247);
     border: 1px solid #000;
+    display: flex;
 }
 
